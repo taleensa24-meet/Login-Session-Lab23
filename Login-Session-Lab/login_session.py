@@ -4,6 +4,17 @@ from flask import session as login_session
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'super-secret-key'
 
+
+@app.route('/', methods=['GET', 'POST'])  # '/' for the default page
+def login():
+	if request.method=='POST':
+		user=request.form["name"]
+		ag=request.form["age"]
+		mes=request.form["message"]
+		if name==user and age==ag message==mes:
+			return redirect(url_for('home'))
+	return render_template('login.html')
+
 @app.route('/', ) # What methods are needed?
 def home():
 	

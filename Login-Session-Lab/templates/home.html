@@ -8,7 +8,17 @@
 <body>
 <h1>Write your name, age, and a message!</h1>
 <br>
+<form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
+        <label for="age">age:</label>
+        <input type="age" id="age" name="age" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
 <!-- Create your form here!
  -->
  
